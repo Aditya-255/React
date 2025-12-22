@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module" src="Script.js">
+        import {add, subtract, multiply, divide} from './Script.js';
+        console.log(add(5, 3));        // 8
+        console.log(subtract(5, 3));   // 2 
+        console.log(multiply(5, 3));   // 15
+        console.log(divide(5, 3));   
+        
+        import * as mathOps from './Script.js';
+        console.log(mathOps.add(5, 3)); // 8
+    </script>
+</body>
+</html>
