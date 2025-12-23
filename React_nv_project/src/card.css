@@ -1,0 +1,29 @@
+.user-card{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 300px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.user-card img{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+.user-card button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

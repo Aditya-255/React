@@ -1,14 +1,20 @@
+import CreateCard from "./CardComponent";
+import App1 from "./function";
 
 
-function App() {
+
+function Firstclass() {
 
   return (
     <>
-      <h1>Hello world</h1>
-      
+    {/* <h1>Hello world</h1> */}
+    <CreateCard/>
     </>
+    
   )
 }
+Firstclass()
 
-export default App
+export default Firstclass;
+
 
