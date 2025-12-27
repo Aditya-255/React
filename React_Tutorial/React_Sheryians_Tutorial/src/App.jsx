@@ -3,8 +3,8 @@ import React from 'react'
 import { BsBookmark } from "react-icons/bs";
 import Card2 from './Component/Card2';
 import User from './Component/User';
-import Button from './talwind Css/Button/Button';
-import Header from './talwind Css/Header/Header';
+import Css from './talwind Css/css';
+// import  './talwind Css/css';
 
 // const arr=[
 //   {user:"Aditya",age:20},
@@ -186,8 +186,9 @@ const App = () => {
       // </div>
     
     <>
-    <Header/>
-    <Button />  
+    {/* <Header/>
+    <Button />   */}
+    <Css />
     </>
       
   )
