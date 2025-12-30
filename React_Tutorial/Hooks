@@ -1,0 +1,18 @@
+useState: State manage
+
+useEffect: handle the side effects
+(API call,DOM Manipulation,event listeners)
+
+useContext: consume the global state without 
+props drilling
+
+useReducer:Complex state management
+(Redux version)
+
+useRef:Access the DOM,
+hold the mutable value so they are not 
+re-render triggers
+
+useMemo & useCallback:
+optimization ,
+avoid the un-necessary re-renders
