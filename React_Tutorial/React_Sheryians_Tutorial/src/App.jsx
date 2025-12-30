@@ -4,6 +4,7 @@ import { BsBookmark } from "react-icons/bs";
 import Card2 from './Component/Card2';
 import User from './Component/User';
 import Css from './talwind Css/css';
+import Func from './Functions/Func';
 // import  './talwind Css/css';
 
 // const arr=[
@@ -188,7 +189,9 @@ const App = () => {
     <>
     {/* <Header/>
     <Button />   */}
-    <Css />
+    {/* <Css /> */}
+
+    <Func />
     </>
       
   )

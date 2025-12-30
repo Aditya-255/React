@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+button {
+    margin: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+input{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
