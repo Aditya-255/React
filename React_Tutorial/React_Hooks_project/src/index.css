@@ -11,3 +11,8 @@ h1{
   margin: 20px;
   width: fit-content;
 }
+input{
+    padding:10px 20px;
+    margin: 20px;
+    font-size:20px;
+}

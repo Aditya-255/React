@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import React from 'react'
 import Counter from './UseState/Counter'
+import Input from './Form Handling/input'
 
 function App() {
 
@@ -20,8 +21,9 @@ function App() {
         <h1>value of num is {num} <br /> {users}</h1>
         <button onClick={changeNum}>Click</button>
       </div> */}
+        {/* <Counter/> */}
 
-        <Counter/>
+        <Input/>
 
     </>
   )
