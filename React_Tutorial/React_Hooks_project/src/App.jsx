@@ -2,6 +2,7 @@ import { useState } from 'react'
 import React from 'react'
 import Counter from './UseState/Counter'
 import Input from './Form Handling/input'
+import Main from './Notes_App/main'
 
 function App() {
 
@@ -23,7 +24,9 @@ function App() {
       </div> */}
         {/* <Counter/> */}
 
-        <Input/>
+        {/* <Input/> */}
+
+        <Main/>
 
     </>
   )

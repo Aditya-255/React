@@ -1,18 +1,1 @@
-button{
-    padding:10px 20px;
-    margin: 20px;
-    font-size:20px;
-    cursor:pointer;
-}
-h1{
-  background-color: black;
-  color: white;
-  padding:10px 20px;
-  margin: 20px;
-  width: fit-content;
-}
-input{
-    padding:10px 20px;
-    margin: 20px;
-    font-size:20px;
-}
+@import "tailwindcss";
