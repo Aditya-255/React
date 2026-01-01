@@ -4,6 +4,7 @@ import Counter from './UseState/Counter'
 import Input from './Form Handling/input'
 import Main from './Notes_App/main'
 import LocalStorage from '../Local Storage/LocalStorage'
+import API_Call from '../API Call/API_Call'
 
 function App() {
 
@@ -28,7 +29,9 @@ function App() {
         {/* <Input/> */}
 
         {/* <Main/> */}
-        <LocalStorage/>
+        {/* <LocalStorage/> */}
+
+        <API_Call/>
     </>
   )
 }
