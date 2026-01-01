@@ -5,6 +5,7 @@ import Input from './Form Handling/input'
 import Main from './Notes_App/main'
 import LocalStorage from '../Local Storage/LocalStorage'
 import API_Call from '../API Call/API_Call'
+import Use_Effect from './UseState/Use_Effect'
 
 function App() {
 
@@ -31,7 +32,8 @@ function App() {
         {/* <Main/> */}
         {/* <LocalStorage/> */}
 
-        <API_Call/>
+        {/* <API_Call/> */}
+        <Use_Effect/>
     </>
   )
 }
