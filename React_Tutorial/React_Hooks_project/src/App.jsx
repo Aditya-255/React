@@ -3,6 +3,7 @@ import React from 'react'
 import Counter from './UseState/Counter'
 import Input from './Form Handling/input'
 import Main from './Notes_App/main'
+import LocalStorage from '../Local Storage/LocalStorage'
 
 function App() {
 
@@ -26,8 +27,8 @@ function App() {
 
         {/* <Input/> */}
 
-        <Main/>
-
+        {/* <Main/> */}
+        <LocalStorage/>
     </>
   )
 }
