@@ -1,11 +1,12 @@
-import { useState } from 'react'
-import React from 'react'
-import Counter from './UseState/Counter'
-import Input from './Form Handling/input'
-import Main from './Notes_App/main'
-import LocalStorage from '../Local Storage/LocalStorage'
-import API_Call from '../API Call/API_Call'
-import Use_Effect from './UseState/Use_Effect'
+// import { useState } from 'react'
+// import React from 'react'
+// import Counter from './UseState/Counter'
+// import Input from './Form Handling/input'
+// import Main from './Notes_App/main'
+// import LocalStorage from '../Local Storage/LocalStorage'
+// import API_Call from '../API Call/API_Call'
+// import Use_Effect from './UseState/Use_Effect'
+import Gallery from './Galllary Project/Gallery'
 
 function App() {
 
@@ -33,7 +34,9 @@ function App() {
         {/* <LocalStorage/> */}
 
         {/* <API_Call/> */}
-        <Use_Effect/>
+        {/* <Use_Effect/> */}
+
+        <Gallery/>
     </>
   )
 }
