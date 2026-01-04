@@ -7,6 +7,8 @@
 // import API_Call from '../API Call/API_Call'
 // import Use_Effect from './UseState/Use_Effect'
 import Gallery from './Galllary Project/Gallery'
+import React_Router_Ex from './Router DOM/React_Router_Ex'
+import Route from './Router DOM/React_Router_Ex'
 
 function App() {
 
@@ -36,7 +38,8 @@ function App() {
         {/* <API_Call/> */}
         {/* <Use_Effect/> */}
 
-        <Gallery/>
+        {/* <Gallery/> */}
+        <React_Router_Ex/>
     </>
   )
 }

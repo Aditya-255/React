@@ -1,1 +1,24 @@
 @import "tailwindcss";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+body{
+    background-color: #121212;}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: cyan;
+}
+.nav div{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* background-color: #1F1F1F; */
+}
