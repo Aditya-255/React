@@ -4,6 +4,7 @@ import Classprops from "./Classprops";
 import Ex from "./ex";
 import App1 from "./function";
 import InputState from "./InputState";
+import Todolist from "./To Do List/Todolist";
 
 
 // const customclick= () => alert("Button clicked!");
@@ -20,7 +21,8 @@ function Firstclass() {
     {/* <Class_State/> */}
     {/* <InputState/> */}
 
-    <Ex/>
+    {/* <Ex/> */}
+    <Todolist/>
     </>
   )
 }
