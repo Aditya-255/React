@@ -6,6 +6,7 @@
 // import LocalStorage from '../Local Storage/LocalStorage'
 // import API_Call from '../API Call/API_Call'
 // import Use_Effect from './UseState/Use_Effect'
+import App7 from './Advance Routing/App7'
 import Gallery from './Galllary Project/Gallery'
 import React_Router_Ex from './Router DOM/React_Router_Ex'
 import Route from './Router DOM/React_Router_Ex'
@@ -39,7 +40,9 @@ function App() {
         {/* <Use_Effect/> */}
 
         {/* <Gallery/> */}
-        <React_Router_Ex/>
+        {/* <React_Router_Ex/> */}
+
+        <App7/>
     </>
   )
 }
