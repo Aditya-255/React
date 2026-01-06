@@ -33,3 +33,16 @@ h1{
     font-weight: 600;
     white-space: nowrap;
 }
+
+.nav{
+  display: flex;
+  background-color: lightgreen;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.nav2{
+    display: flex;
+    gap: 30px;
+}
