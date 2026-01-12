@@ -1,3 +1,5 @@
+// import Index from "./Calculator";
+import Calc from "./Calculator/Calc";
 import CreateCard from "./CardComponent";
 import Class_State from "./Class_State";
 import Classprops from "./Classprops";
@@ -6,6 +8,7 @@ import Ex from "./ex";
 import App1 from "./function";
 import InputState from "./InputState";
 import Todolist from "./To Do List/Todolist";
+import './index.css'
 
 
 // const customclick= () => alert("Button clicked!");
@@ -25,7 +28,9 @@ function Firstclass() {
     {/* <Ex/> */}
     {/* <Todolist/> */}
 
-      <Contactbook/>
+      {/* <Contactbook/> */}
+      {/* <h1>Hello</h1> */}
+      <Calc/>
 
     </>
   )

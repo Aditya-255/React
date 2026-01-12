@@ -88,3 +88,11 @@ class Contactbook extends React.Component {
 }
 
 export default Contactbook
+
+
+//Create class based component named calculator
+// it will take i/p from user inform of buttons
+// prepares a button grid as per windows calc
+// layout and implement evaluation logic to show result
+//  3 state var 1 op,2 op,3 op
+// implement basic ope, +,-,*,/ 
