@@ -19,3 +19,7 @@ app.post('/addstudents',(req,res)=>{
 
 // create endpoint to accept date of birth in dd/mm/yy format if age of user
 //  is more than 18 than print message you are eligible for admission else not
+
+
+// NO-SQl DB
+// key value,document,graph,wide columns

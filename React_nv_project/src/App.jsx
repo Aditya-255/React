@@ -9,6 +9,11 @@ import App1 from "./function";
 import InputState from "./InputState";
 import Todolist from "./To Do List/Todolist";
 import './index.css'
+import MultiPart from "./Multipart/MultiPart";
+import MultiplePart2 from "./Multipart/MultiplePart2";
+import Display123 from "./Practice/prac";
+import Hook1 from "./Hooks/hook1";
+import Hook2 from "./Hooks/Hook2";
 
 
 // const customclick= () => alert("Button clicked!");
@@ -30,8 +35,12 @@ function Firstclass() {
 
       {/* <Contactbook/> */}
       {/* <h1>Hello</h1> */}
-      <Calc/>
-
+      {/* <Calc/> */}
+      {/* <MultiPart/> */}
+      {/* <MultiplePart2/> */}
+      {/* <Display123/> */}
+      <Hook1/>
+      <Hook2/>
     </>
   )
 }
