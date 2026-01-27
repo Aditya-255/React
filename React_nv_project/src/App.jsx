@@ -14,6 +14,9 @@ import MultiplePart2 from "./Multipart/MultiplePart2";
 import Display123 from "./Practice/prac";
 import Hook1 from "./Hooks/hook1";
 import Hook2 from "./Hooks/Hook2";
+import UseStateEx from "./Hooks/UseStateEx";
+import TodoList from "./Hooks/TODOList";
+import Contack_book from "./Contack_Book_using_hooks/Contack_book";
 
 
 // const customclick= () => alert("Button clicked!");
@@ -39,8 +42,12 @@ function Firstclass() {
       {/* <MultiPart/> */}
       {/* <MultiplePart2/> */}
       {/* <Display123/> */}
-      <Hook1/>
-      <Hook2/>
+      {/* <Hook1/> */}
+      {/* <Hook2/> */}
+
+      {/* <UseStateEx/> */}
+      {/* <TodoList/> */}
+      <Contack_book/>
     </>
   )
 }
