@@ -1,72 +1,71 @@
 const express = require('express')
+const fs = require('fs')
 const app = express()
 const port = 3000
-const fs=require('fs')
-const filePath='todos.json'
-function readdata(){
-    const todos=fs.readFileSync(filePath)
-    if(!todos){
-        return []
-    }
-    else{
-        return JSON.parse(todos)
+const filePath = 'todos.json'
+function readdata() {
+    const todos = fs.readFileSync(filePath)
+    if (!todos) {
+        return [];
+    } else {
+        return JSON.parse(todos);
     }
 }
-function savedata(){
-
+function savedata(data) {
+    fs.writeFileSync(filePath, JSON.stringify(data));
 }
-
-// let todos=[]
-
+// let todos = [];
 app.use(express.json())
-
-app.get('/', (req, res) => res.send('Hello World!'))
-app.get('/todo/',(req,res)=>{
-    const todos=readdata()
+// fetch all todos
+app.get("/todo/", (req, res) => {
+    const todos = readdata();
     res.json(todos)
 })
-app.get('/todo/:id',(req,res)=>{
-    const id=req.params.id
-    const index=todos.findIndex((todo)=> todo.id==id)
-    if(index==-1){
-        return res.status(401).json({'message':'no todo with given id:'+id})
+// get todo with id
+app.get("/todo/:id", (req, res) => {
+    const todos = readdata();
+    const id = req.params.id;
+    const index = todos.findIndex((todo) => todo.id == id)
+    if (index == -1) {
+        return res.status(401).json({ 'message': 'No todo with given id:' + id })
     }
-    res.status(201).json("todos with is: " + req.params.id)
+    res.status(201).json(todos[index])
 })
-
-app.post('/todo/',(req,res)=>{
-    const title=req.body.title
-    const newtodo={
-        id:Date.now().toString(),
-        title:title,
-        isCompleted:false,
-
+app.post('/todo/', (req, res) => {
+    const todos = readdata();
+    const newtodo = {
+        id: Date.now().toString(),
+        title: req.body.title,
+        isCompleted: false
     }
     todos.push(newtodo)
-    res.status(201).json({'message':'todo created','data':newtodo})
+    savedata(todos)
+    res.status(201).json({ 'message': 'Data added', 'data': newtodo })
 })
-
-app.put('/todo/:id',(req,res)=>{
-    const id=req.params.id
-    const index=todos.findIndex((todo)=> todo.id==id)
-    if(index==-1){
-        return res.status(401).json({'message':'no todo with given id:'+id})
+app.put('/todo/:id', (req, res) => {
+    const todos = readdata();
+    const id = req.params.id;
+    const index = todos.findIndex((todo) => todo.id == id)
+    if (index == -1) {
+        return res.status(401).json({ 'message': 'No todo with given id:' + id })
     }
-    todos[index]={
+    todos[index] = {
         ...todos[index],
-        title:req.body.title,
+        title: req.body.title
     }
-    res.status(201).json({'message':'todo updated','data':todos[index]})
+    savedata(todos)
+    res.status(201).json({ 'message': 'Data updated', 'data': todos[index] })
 })
-
-app.delete('/todo/:id',(req,res)=>{
-    const id=req.params.id
-    const index=todos.findIndex((todo)=> todo.id==id)
-    if(index==-1){
-        return res.status(401).json({'message':'no todo with given id:'+id})
+app.delete('/todo/:id', (req, res) => {
+    let todos = readdata();
+    const id = req.params.id;
+    const index = todos.findIndex((todo) => todo.id == id)
+    if (index == -1) {
+        return res.status(401).json({ 'message': 'No todo with given id:' + id })
     }
-    todos=todos.filter((todo)=>todo.id!=id)
-    res.send("delete todos with is" + req.params.id)
+    todos = todos.filter((todo) => todo.id != id)
+    savedata(todos)
+    res.send('deleted todo with id' + req.params.id)
 })
-
+app.get('/', (req, res) => res.send('Hello World!'))
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
