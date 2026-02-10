@@ -5,8 +5,8 @@ const port = 3000
 const filePath = 'todos.json'
 function readdata() {
     const todos = fs.readFileSync(filePath)
-    if (!todos) {
-        return [];
+    if (!todos)  {
+        return  [];
     } else {
         return JSON.parse(todos);
     }

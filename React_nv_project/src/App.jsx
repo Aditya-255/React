@@ -17,6 +17,7 @@ import Hook2 from "./Hooks/Hook2";
 import UseStateEx from "./Hooks/UseStateEx";
 import TodoList from "./Hooks/TODOList";
 import Contack_book from "./Contack_Book_using_hooks/Contack_book";
+import Exe from "./Exercise/exe";
 
 
 // const customclick= () => alert("Button clicked!");
@@ -47,7 +48,9 @@ function Firstclass() {
 
       {/* <UseStateEx/> */}
       {/* <TodoList/> */}
-      <Contack_book/>
+      {/* <Contack_book/> */}
+
+      <Exe/>
     </>
   )
 }
