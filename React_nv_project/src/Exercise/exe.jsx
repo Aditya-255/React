@@ -9,8 +9,7 @@ export default function Exe() {
 
   // toggle theme
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+    setTheme(theme === "light" ? "dark" : "light");  };
 
   // add item
   const addItem = () => {
